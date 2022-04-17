@@ -18,3 +18,12 @@
 3. erdpy --verbose deps install rust --overwrite
 4. erdpy --verbose deps install vmtools --overwrite
 5. erdpy --verbose deps install rust --overwrite
+
+
+## Deploy on testnet 
+1. Create a wallet 
+```sh
+ erdpy --verbose wallet derive alice.pem --mnemonic
+```
+2. Use the snippet in the interaction folder to deploy on the testnet after you have got some EGLD from faucet
+My transaction : https://testnet-explorer.elrond.com/transactions/938a996aebf63724e5024571305a38b3caabac0630db36a958412d0fa76c7181
