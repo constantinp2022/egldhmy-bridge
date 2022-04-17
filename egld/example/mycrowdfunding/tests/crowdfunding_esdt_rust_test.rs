@@ -1,4 +1,4 @@
-use crowdfunding_esdt::*;
+use mycrowdfunding::*;
 use elrond_wasm::types::Address;
 use elrond_wasm_debug::{
     managed_address, managed_biguint, managed_token_id, rust_biguint, testing_framework::*,

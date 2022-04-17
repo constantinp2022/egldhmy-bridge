@@ -20,7 +20,7 @@ lto = true
 debug = false
 panic = "abort"
 
-[dependencies.crowdfunding-esdt]
+[dependencies.mycrowdfunding]
 path = ".."
 
 [dependencies.elrond-wasm-node]

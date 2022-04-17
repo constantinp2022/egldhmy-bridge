@@ -1,5 +1,6 @@
 # Deploy Elrond
 
+##  Prepare the set up
 1. Install VSCODE
 2. Install Elrond IDE extension
 3. Ctrl + Shift + P
@@ -12,7 +13,8 @@
 10. mycrowdfunding/mandos contains the tests with diferent scanario written in json
 
 ## Deploy
-1. 
-2. 
-3. 
-4. 
+1. Does NOT work on WINDOWS
+2. you must install erdpy (Elrond SDK)
+3. erdpy --verbose deps install rust --overwrite
+4. erdpy --verbose deps install vmtools --overwrite
+5. erdpy --verbose deps install rust --overwrite
