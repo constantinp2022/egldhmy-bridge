@@ -15,7 +15,6 @@ import {
 } from '@elrondnetwork/erdjs';
 import { faArrowUp, faArrowDown } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import moment from 'moment';
 import { contractAddress } from 'config';
 
 const Actions = () => {
@@ -85,8 +84,9 @@ const Actions = () => {
 
   const sendWithdrawTransaction = async () => {
     const withdrawTransaction = {
-      value: '100000000000000000',
-      data: 'withdraw',
+      value: '0',
+      data: 'withdraw@fd7ff851c1f6eb593249495217a34d6bf38709ce98ab5474db54a932469c2265',
+      // data: 'withdraw@4ac6577afd782d0143a681397af4a7555cedbe7bb5e1359217eaf037fe53cb98',
       receiver: contractAddress
     };
     await refreshAccount();
