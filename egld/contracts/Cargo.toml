@@ -1,0 +1,15 @@
+[package]
+name = "lock-egld"
+version = "0.0.1"
+authors = [ "Constantin Pricope",]
+edition = "2021"
+publish = false
+
+[lib]
+path = "src/lock_egld.rs"
+
+[dependencies.elrond-wasm]
+version = "0.29.3"
+
+[dev-dependencies.elrond-wasm-debug]
+version = "0.29.3"

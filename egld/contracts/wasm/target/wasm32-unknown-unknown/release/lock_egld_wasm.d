@@ -1,0 +1,1 @@
+/home/junior/zku-final-project/egldhmy-bridge/egld/contracts/wasm/target/wasm32-unknown-unknown/release/lock_egld_wasm.wasm: /home/junior/zku-final-project/egldhmy-bridge/egld/contracts/src/lock_egld.rs /home/junior/zku-final-project/egldhmy-bridge/egld/contracts/wasm/src/lib.rs
