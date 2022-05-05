@@ -7,8 +7,8 @@ import {
   useGetNetworkConfig
 } from '@elrondnetwork/dapp-core';
 import { faExchangeAlt } from '@fortawesome/free-solid-svg-icons';
-import { getTransactions } from 'apiRequests';
-import { contractAddress } from 'config';
+import { getTransactions } from '../../../apiRequests';
+import { contractAddress } from '../../../config';
 import TransactionsList from './TransactionsList';
 import { StateType } from './types';
 

@@ -1,10 +1,10 @@
 import React from 'react';
 import { DappUI, DappProvider } from '@elrondnetwork/dapp-core';
 import { Route, Routes, BrowserRouter as Router } from 'react-router-dom';
-import Layout from 'components/Layout';
-import PageNotFound from 'pages/PageNotFound';
-import { routeNames } from 'routes';
-import routes from 'routes';
+import Layout from './components/Layout';
+import PageNotFound from './pages/PageNotFound';
+import { routeNames } from './routes';
+import routes from './routes';
 import '@elrondnetwork/dapp-core/build/index.css';
 
 const environment = 'testnet';

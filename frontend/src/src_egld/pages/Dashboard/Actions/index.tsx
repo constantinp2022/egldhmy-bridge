@@ -15,7 +15,7 @@ import {
 } from '@elrondnetwork/erdjs';
 import { faArrowUp, faArrowDown } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { contractAddress } from 'config';
+import { contractAddress } from '../../../config';
 
 const Actions = () => {
   const account = useGetAccountInfo();

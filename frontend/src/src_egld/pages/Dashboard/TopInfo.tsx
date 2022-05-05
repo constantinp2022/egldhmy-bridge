@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { useGetAccountInfo, DappUI } from '@elrondnetwork/dapp-core';
-import { contractAddress } from 'config';
+import { contractAddress } from '../../config';
 
 const TopInfo = () => {
   const { address, account } = useGetAccountInfo();

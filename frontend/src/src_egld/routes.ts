@@ -1,4 +1,4 @@
-import { dAppName } from 'config';
+import { dAppName } from './config';
 import withPageTitle from './components/PageTitle';
 import Dashboard from './pages/Dashboard';
 import Home from './pages/Home';
