@@ -77,7 +77,7 @@ const Wallet = () => {
       }
    }
    return x;
-}
+	}
 
 	const chainChangedHandler = () => {
 		// reload the page to avoid any errors with chain change mid use of application

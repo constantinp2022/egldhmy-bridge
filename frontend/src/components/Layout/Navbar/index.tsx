@@ -2,7 +2,7 @@ import React from 'react';
 import { logout, useGetAccountInfo } from '@elrondnetwork/dapp-core';
 import { Navbar as BsNavbar, NavItem, Nav } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import { dAppName } from '../../../config';
+import { dAppName } from '../../../src_egld/config';
 import { routeNames } from '../../../routes';
 import { ReactComponent as BridgeLogo } from './../../../assets/img/bridge.svg';
 

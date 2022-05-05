@@ -1,8 +1,8 @@
-import { dAppName } from './config';
+import { dAppName } from './src_egld/config';
 import withPageTitle from './components/PageTitle';
-import Dashboard from './pages/Dashboard';
+import Dashboard from './src_egld/pages/Dashboard';
 import Home from './pages/Home';
-import Transaction from './pages/Transaction';
+import Transaction from './src_egld/pages/Transaction';
 
 export const routeNames = {
   home: '/',
@@ -34,7 +34,7 @@ const routes: Array<any> = [
 
 const mappedRoutes = routes.map((route) => {
   const title = route.title
-    ? `${route.title} • Elrond ${dAppName}`
+    ? `${route.title} • Bridge EGLD HRC`
     : `Elrond ${dAppName}`;
 
   const requiresAuth = Boolean(route.authenticatedRoute);

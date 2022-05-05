@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Link } from 'react-router-dom';
-import { dAppName } from '../../config';
+import { dAppName } from '../../src_egld/config';
 import { routeNames } from '../../routes';
 
 const Home = () => {
@@ -11,11 +11,11 @@ const Home = () => {
           <div className='card shadow-sm rounded p-4 border-0'>
             <div className='card-body text-center'>
               <h2 className='mb-3' data-testid='title'>
-                {dAppName}
+                Elrond lock/unlock EGLD
               </h2>
 
               <p className='mb-3'>
-                This is an Elrond dapp sample.
+                Lock EGLD - Contact admin for mint over Harmony
                 <br /> Login using your Elrond wallet.
               </p>
 
@@ -30,7 +30,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-    </div>
+    </div> 
   );
 };
 
