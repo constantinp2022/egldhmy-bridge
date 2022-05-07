@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { useGetAccountInfo, DappUI } from '@elrondnetwork/dapp-core';
-import { contractAddress } from '../../config';
+import { contractAddressEGLD } from '../../config';
 
 const TopInfo = () => {
   const { address, account } = useGetAccountInfo();
@@ -13,7 +13,7 @@ const TopInfo = () => {
       </div>
       <div className='mb-4'>
         <span className='opacity-6 mr-1'>Contract address:</span>
-        <span data-testid='contractAddress'> {contractAddress}</span>
+        <span data-testid='contractAddress'> {contractAddressEGLD}</span>
       </div>
       <div>
         <h3 className='py-2'>

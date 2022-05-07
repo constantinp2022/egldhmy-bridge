@@ -15,7 +15,7 @@ import {
 } from '@elrondnetwork/erdjs';
 import { faArrowUp, faArrowDown } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { contractAddress } from '../../../config';
+import { contractAddressEGLD } from '../../../config';
 
 const Actions = () => {
   const account = useGetAccountInfo();
@@ -30,7 +30,7 @@ const Actions = () => {
 
   React.useEffect(() => {
     const query = new Query({
-      address: new Address(contractAddress),
+      address: new Address(contractAddressEGLD),
       args: [new AddressValue(new Address(address))]
     });
     const proxy = new ProxyProvider(network.apiAddress);
@@ -64,7 +64,7 @@ const Actions = () => {
     const depositTransaction = {
       value: '1000000000000000000',
       data: 'deposit',
-      receiver: contractAddress
+      receiver: contractAddressEGLD
     };
     await refreshAccount();
 
@@ -87,7 +87,7 @@ const Actions = () => {
       value: '0',
       // data: 'withdraw@fd7ff851c1f6eb593249495217a34d6bf38709ce98ab5474db54a932469c2265',
       data: 'withdraw@4ac6577afd782d0143a681397af4a7555cedbe7bb5e1359217eaf037fe53cb98',
-      receiver: contractAddress
+      receiver: contractAddressEGLD
     };
     await refreshAccount();
 

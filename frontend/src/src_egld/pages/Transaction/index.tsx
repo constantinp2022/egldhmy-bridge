@@ -31,7 +31,7 @@ const Transaction = () => {
               {txHash}
             </a>
           </p>
-          <Link to={routeNames.dashboard} className='btn btn-primary mt-3'>
+          <Link to={routeNames.dashboard_egld} className='btn btn-primary mt-3'>
             Back to dashboard
           </Link>
         </>
@@ -46,7 +46,7 @@ const Transaction = () => {
       description={
         <>
           <p>Try again</p>
-          <a href={routeNames.dashboard} className='btn btn-primary mt-3'>
+          <a href={routeNames.dashboard_egld} className='btn btn-primary mt-3'>
             Back to dashboard
           </a>
         </>

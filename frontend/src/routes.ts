@@ -1,16 +1,18 @@
 import { dAppName } from './src_egld/config';
 import withPageTitle from './components/PageTitle';
 import Dashboard from './src_egld/pages/Dashboard';
+import DashboardHRC from './src_hrc/pages/Dashboard';
 import Home from './pages/Home';
 import Transaction from './src_egld/pages/Transaction';
 
 export const routeNames = {
   home: '/',
-  dashboard: '/dashboard',
-  transaction: '/transaction',
-  unlock: '/unlock',
-  ledger: '/ledger',
-  walletconnect: '/walletconnect'
+  dashboard_egld: '/dashboard-egld',
+  dashboard_hrc: '/dashboard-hrc',
+  transaction_egld: '/transaction',
+  unlock_egld: '/unlock',
+  ledger_egld: '/ledger',
+  walletconnect_egld: '/walletconnect'
 };
 
 const routes: Array<any> = [
@@ -20,16 +22,23 @@ const routes: Array<any> = [
     component: Home
   },
   {
-    path: routeNames.dashboard,
+    path: routeNames.dashboard_egld,
     title: 'Dashboard',
     component: Dashboard,
     authenticatedRoute: true
   },
   {
-    path: routeNames.transaction,
+    path: routeNames.transaction_egld,
     title: 'Transaction',
-    component: Transaction
-  }
+    component: Transaction,
+    authenticatedRoute: true
+  },
+  {
+    path: routeNames.dashboard_hrc,
+    title: 'Dashboard HRC',
+    component: DashboardHRC,
+    authenticatedRoute: false
+  },
 ];
 
 const mappedRoutes = routes.map((route) => {

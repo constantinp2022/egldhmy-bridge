@@ -1,17 +1,20 @@
 import {React, useState} from 'react'
-import styles from './Wallet.module.css';
+import styles from '../Wallet/Wallet.module.css';
 
 const Interactions = (props) => {
 
 	const [transferHash, setTransferHash] = useState();
 
+	// const mintAmount = 1000000000000000;
+	const mintAmount = 10000;
+
 
 	const transferHandler = async (e) => {
 		e.preventDefault();
-		let transferAmount = e.target.sendAmount.value;
+		let transferAmount = mintAmount;
 		let recieverAddress = e.target.recieverAddress.value;
 
-		let txt = await props.contract.transfer(recieverAddress, transferAmount);
+		let txt = await props.contract.mint(recieverAddress, transferAmount);
 		console.log(txt);
 		setTransferHash("Transfer confirmation hash: " + txt.hash);
 	}
@@ -19,14 +22,11 @@ const Interactions = (props) => {
 	return (
 			<div className={styles.interactionsCard}>
 				<form onSubmit={transferHandler}>
-					<h3> Transfer Coins </h3>
+					<h3> Admin Interface Mint WETH </h3>
 						<p> Reciever Address </p>
 						<input type='text' id='recieverAddress' className={styles.addressInput}/>
 
-						<p> Send Amount </p>
-						<input type='number' id='sendAmount' min='1'/>
-
-						<button type='submit' className={styles.button6}>Send</button>
+						<button type='submit' className={styles.button6}>Mint</button>
 						<div>
 							{transferHash}
 						</div>

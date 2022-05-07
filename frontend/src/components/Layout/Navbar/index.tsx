@@ -10,7 +10,7 @@ const Navbar = () => {
   const { address } = useGetAccountInfo();
 
   const handleLogout = () => {
-    logout(`${window.location.origin}/unlock`);
+    logout(`${window.location.origin}`);
   };
 
   const isLoggedIn = Boolean(address);
@@ -20,7 +20,7 @@ const Navbar = () => {
       <div className='container-fluid'>
         <Link
           className='d-flex align-items-center navbar-brand mr-0'
-          to={isLoggedIn ? routeNames.dashboard : routeNames.home}
+          to={ routeNames.home }
         >
           <BridgeLogo className='bridge-logo' />
           <span className='dapp-name text-muted'>{dAppName}</span>

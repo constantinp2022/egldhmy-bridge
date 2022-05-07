@@ -3,7 +3,7 @@ import axios from 'axios';
 interface GetLatestTransactionsType {
   apiAddress: string;
   address: string;
-  contractAddress: string;
+  contractAddressEGLD: string;
   timeout: number;
   page?: number;
   url?: string;
@@ -13,14 +13,14 @@ const fetchTransactions = (url: string) =>
   async function getTransactions({
     apiAddress,
     address,
-    contractAddress,
+    contractAddressEGLD,
     timeout
   }: GetLatestTransactionsType) {
     try {
       const { data } = await axios.get(`${apiAddress}${url}`, {
         params: {
           sender: address,
-          receiver: contractAddress,
+          receiver: contractAddressEGLD,
           condition: 'must',
           size: 25
         },

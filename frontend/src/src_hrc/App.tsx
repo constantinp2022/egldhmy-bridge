@@ -9,7 +9,7 @@
 
 // import logo from './logo.svg';
 import './App.css';
-import Wallet from './Wallet';
+import Wallet from './pages/Dashboard/Wallet/Wallet';
 
 const App = () => {
   return (

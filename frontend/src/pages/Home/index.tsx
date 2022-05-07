@@ -11,18 +11,41 @@ const Home = () => {
           <div className='card shadow-sm rounded p-4 border-0'>
             <div className='card-body text-center'>
               <h2 className='mb-3' data-testid='title'>
-                Elrond lock/unlock EGLD
+                Elrond
               </h2>
 
               <p className='mb-3'>
-                Lock EGLD - Contact admin for mint over Harmony
-                <br /> Login using your Elrond wallet.
+                Lock EGLD - Contact admin for unlock.
               </p>
 
               <Link
-                to={routeNames.unlock}
+                to={routeNames.unlock_egld}
                 className='btn btn-primary mt-3 text-white'
-                data-testid='loginBtn'
+                data-testid='loginBtnEGLD'
+              >
+                Login
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className='row w-100'>
+        <div className='col-12 col-md-8 col-lg-5 mx-auto'>
+          <div className='card shadow-sm rounded p-4 border-0'>
+            <div className='card-body text-center'>
+              <h2 className='mb-3' data-testid='title'>
+                Harmony
+              </h2>
+
+              <p className='mb-3'>
+                Burn wEGLD - Contact admin for mint over Harmony
+              </p>
+
+              <Link
+                to={routeNames.dashboard_hrc}
+                className='btn btn-primary mt-3 text-white'
+                data-testid='loginBtnHRC'
               >
                 Login
               </Link>

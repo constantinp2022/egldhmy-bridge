@@ -8,7 +8,7 @@ import {
 } from '@elrondnetwork/dapp-core';
 import { faExchangeAlt } from '@fortawesome/free-solid-svg-icons';
 import { getTransactions } from '../../../apiRequests';
-import { contractAddress } from '../../../config';
+import { contractAddressEGLD } from '../../../config';
 import TransactionsList from './TransactionsList';
 import { StateType } from './types';
 
@@ -31,7 +31,7 @@ const Transactions = () => {
         apiAddress,
         address: account.address,
         timeout: 3000,
-        contractAddress
+        contractAddressEGLD
       }).then(({ data, success: transactionsFetched }) => {
         refreshAccount();
         setState({

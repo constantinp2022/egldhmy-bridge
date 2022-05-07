@@ -30,8 +30,8 @@ const App = () => {
           <SignTransactionsModals className='custom-class-for-modals' />
           <Routes>
             <Route
-              path={routeNames.unlock}
-              element={<UnlockPage loginRoute={routeNames.dashboard} />}
+              path={routeNames.unlock_egld}
+              element={<UnlockPage loginRoute={routeNames.dashboard_egld} />}
             />
             {routes.map((route: any, index: number) => (
               <Route

@@ -1,8 +1,8 @@
 import {React, useState, useEffect} from 'react'
 import {ethers} from 'ethers'
 import styles from './Wallet.module.css'
-import simple_token_abi from'./Contracts/simple_token_abi.json'
-import Interactions from './Interactions';
+// import simple_token_abi from'../../../Contracts/simple_token_abi.json'
+import Interactions from '../Interactions/Interactions';
 
 const Wallet = () => {
 
@@ -80,7 +80,7 @@ const Wallet = () => {
 	}
 
 	const chainChangedHandler = () => {
-		// reload the page to avoid any errors with chain change mid use of application
+		// reload the page to avoid any Transferrrors with chain change mid use of application
 		window.location.reload();
 	}
 
@@ -112,23 +112,30 @@ const Wallet = () => {
 	}
 	
 	return (
-	<div>
-			<h2> {tokenName + " ERC-20 Wallet"} </h2>
-			<button className={styles.button6} onClick={connectWalletHandler}>{connButtonText}</button>
-
-			<div className={styles.walletCard}>
+		<div className={styles.rectangle}>
 			<div>
-				<h3>Address: {defaultAccount}</h3>
-			</div>
+				<h2> Harmony Mint/Burn</h2>
+				<p> Please select Harmony Network before connecting... </p>
+				<button className={styles.button6} onClick={connectWalletHandler}>{connButtonText}</button>
+				<br />
+				<br />
 
-			<div>
-				<h3>{tokenName} Balance: {balance}</h3>
-			</div>
+				<div className={styles.walletCard}> </div>
+				<br />
+				<br />
+				
+				<div> <h3> My address: {defaultAccount}</h3> </div>
 
-			{errorMessage}
+				<div> <h3>{tokenName} Balance: {balance} </h3> </div>
+				<br />
+				<br />
+
+				{errorMessage}
+			</div>
+			<Interactions contract = {contract}/>
+			<br />
+			<br />
 		</div>
-		<Interactions contract = {contract}/>
-	</div>
 	)
 }
 
