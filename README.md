@@ -1,7 +1,7 @@
 # Bridge between EGLD network(Elrond) AND HARMONY (ONE NETWORK)
 
 
-#Proof of concept 
+## Proof of concept 
 1. Develop a minimum viable product MVP so that a bridge between the two networks is feasible.
 2. Launch testnet details
     2.1. ELROND testnet smartcontract: https://testnet-explorer.elrond.com/accounts/erd1qqqqqqqqqqqqqpgqsv7ggfdlcgyf8frmffxs5ptrdnsr3cppyfjshxxgrl
@@ -10,12 +10,12 @@
 
 ...
 
-For local deployment
+## For local deployment
 1. Deploy elrond smart contract 
     Use Elrond Workspace explorer and install erdpy
     After installing erdpy
-    1.1. erdpy contract build
-    1.2. erdpy contract deploy
+1.1. erdpy contract build
+1.2. erdpy contract deploy
     Copy the newly generated contract address to frontend/src/src_egld/config.tsx the field contractAddressEGLD
 2. Deploy harmony smart contract
     You can use remix for simplicity. remix.ethereum.org
@@ -35,7 +35,7 @@ For local deployment
 
 
 
-Future development:
+## Future development:
 v0.0.1 testnet Proof of feasible (works with an admin administrator/deployer/owner of contract)[Done]
 ...
 ...
@@ -50,3 +50,10 @@ v1.0.0 Bridge using zk technology no admin needed (works with trustless technolo
 [TO BE PLAN]
 ...
 
+## Thank you note
+This project was build with the help ok zku.one (zero knowledge university) and special thanks for the mentors helps.
+Open project that help for realizing this project were:
+    1. https://github.com/ElrondNetwork/dapp-template - for ui over elrond network
+    2. https://github.com/ElrondNetwork/ping-pong-smart-contract - for contract build  over elrond network
+    3. https://github.com/mikec3/my_tutorials/tree/master/simple_storage - for UI over Harmony network
+    4. vercel for UI deployment
