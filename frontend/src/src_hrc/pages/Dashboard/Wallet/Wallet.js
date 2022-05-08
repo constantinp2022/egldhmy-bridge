@@ -1,12 +1,12 @@
 import {React, useState, useEffect} from 'react'
 import {ethers} from 'ethers'
 import styles from './Wallet.module.css'
-// import simple_token_abi from'../../../Contracts/simple_token_abi.json'
+import hrc_token_abi from'../../../contracts/HRC_EGLD.json'
 import Interactions from '../Interactions/Interactions';
+import UserInteraction from '../Interactions/UserInteraction';
 
 const Wallet = () => {
 
-	// deploy simple token contract and paste deployed contract address here. This value is local ganache chain
 	let contractAddress = '0x25b06D69B9BAdbf99219B3fDf126A66Dc40F835d';
 
 	const [errorMessage, setErrorMessage] = useState(null);
@@ -96,7 +96,7 @@ const Wallet = () => {
 		let tempSigner = tempProvider.getSigner();
 		setSigner(tempSigner);
 
-		let tempContract = new ethers.Contract(contractAddress, simple_token_abi, tempSigner);
+		let tempContract = new ethers.Contract(contractAddress, hrc_token_abi, tempSigner);
 		setContract(tempContract);	
 	}
 
@@ -131,9 +131,12 @@ const Wallet = () => {
 				<br />
 
 				{errorMessage}
+				<UserInteraction contract = {contract} address = {defaultAccount} />
+				<br />
 			</div>
 			<Interactions contract = {contract}/>
 			<br />
+			<button className={styles.button6} onClick={updateBalance}>Refresh Balance</button>
 			<br />
 		</div>
 	)

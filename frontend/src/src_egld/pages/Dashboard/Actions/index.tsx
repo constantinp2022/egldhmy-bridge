@@ -1,3 +1,4 @@
+
 import * as React from 'react';
 import {
   transactionServices,
@@ -17,6 +18,9 @@ import { faArrowUp, faArrowDown } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { contractAddressEGLD } from '../../../config';
 
+
+let { bech32, bech32m } = require('bech32');
+
 const Actions = () => {
   const account = useGetAccountInfo();
   const { hasPendingTransactions } = useGetPendingTransactions();
@@ -24,6 +28,7 @@ const Actions = () => {
   const { address } = account;
 
   const [hasDeposit, setHasDeposit] = React.useState<boolean>();
+  const [receiverAddress, setReceiverAddress] = React.useState<string>("");
   const /*transactionSessionId*/ [, setTransactionSessionId] = React.useState<
       string | null
     >(null);
@@ -83,10 +88,12 @@ const Actions = () => {
   };
 
   const sendWithdrawTransaction = async () => {
+
+    let mybech32address = new Address(receiverAddress).hex()
+
     const withdrawTransaction = {
       value: '0',
-      // data: 'withdraw@fd7ff851c1f6eb593249495217a34d6bf38709ce98ab5474db54a932469c2265',
-      data: 'withdraw@4ac6577afd782d0143a681397af4a7555cedbe7bb5e1359217eaf037fe53cb98',
+      data: 'withdraw@' + mybech32address,
       receiver: contractAddressEGLD
     };
     await refreshAccount();
@@ -105,6 +112,11 @@ const Actions = () => {
     }
   };
 
+  function getData(val: any){
+    setReceiverAddress((val.target.value));
+    console.warn(val.target.value);
+  }
+
   return (
     <div className='d-flex mt-4 justify-content-center'>
       <div className='action-btn' onClick={sendDepositTransaction}>
@@ -115,6 +127,8 @@ const Actions = () => {
           Deposit
         </a>
       </div>
+      <br />
+      <input type='text' id='receiverAddress' onChange={getData} className="receiverAddress"/>
       <div className='action-btn' onClick={sendWithdrawTransaction}>
         <button className='btn'>
           <FontAwesomeIcon icon={faArrowDown} className='text-primary' />

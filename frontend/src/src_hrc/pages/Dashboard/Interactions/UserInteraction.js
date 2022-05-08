@@ -11,21 +11,18 @@ const Interactions = (props) => {
 	const transferHandler = async (e) => {
 		e.preventDefault();
 		let transferAmount = mintAmount;
-		let recieverAddress = e.target.recieverAddress.value;
 
-		let txt = await props.contract.mint(recieverAddress, transferAmount);
+		let txt = await props.contract.burn(props.address, transferAmount);
 		console.log(txt);
 		setTransferHash("Transfer confirmation hash: " + txt.hash);
 	}
 
 	return (
-			<div className={styles.interactionsCard}>
+			<div className={styles.interactionsCardUser}>
 				<form onSubmit={transferHandler}>
-					<h3> Admin Interface Mint WETH </h3>
-						<p> Reciever Address </p>
-						<input type='text' id='recieverAddress' className={styles.addressInput}/>
+					<h3> User Interface Burn WETH </h3>
 
-						<button type='submit' className={styles.button6}>Mint</button>
+						<button type='submit' className={styles.button6}>Burn</button>
 						<div>
 							{transferHash}
 						</div>

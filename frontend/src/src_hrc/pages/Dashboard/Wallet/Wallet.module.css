@@ -32,7 +32,19 @@
 	margin: auto;
 	padding-bottom: 1em;
 	border-radius: 10px;
-	background-color: #ffffff;
+	background-color: #5d4fdd;
+	box-shadow: 0.2em 0.2em 0 0.2em rgba(0,0,0,0.17);
+}
+
+
+.interactionsCardUser {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	margin: auto;
+	padding-bottom: 1em;
+	border-radius: 10px;
+	background-color: #68fdd0;
 	box-shadow: 0.2em 0.2em 0 0.2em rgba(0,0,0,0.17);
 }
 
