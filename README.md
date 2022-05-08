@@ -12,16 +12,16 @@
 
 ## For local deployment
 1. Deploy elrond smart contract 
-    Use Elrond Workspace explorer and install erdpy
-    After installing erdpy
+    Use Elrond Workspace explorer and install erdpy<br />
+    After installing erdpy<br />
 1.1. erdpy contract build
 1.2. erdpy contract deploy
-    Copy the newly generated contract address to frontend/src/src_egld/config.tsx the field contractAddressEGLD
+    Copy the newly generated contract address to frontend/src/src_egld/config.tsx the field contractAddressEGLD<br />
 2. Deploy harmony smart contract
-    You can use remix for simplicity. remix.ethereum.org
-    copy paste the code from hrc/contracts/HRC_EGLD.sol into a new file
-    compile and deploy 
-    Copy the newly generated contract address to frontend/src/src_hrc/pages/Dashboard/Wallet/Wallet.js the field contractAddress
+    You can use remix for simplicity. remix.ethereum.org<br />
+    copy paste the code from hrc/contracts/HRC_EGLD.sol into a new file<br />
+    compile and deploy <br />
+    Copy the newly generated contract address to frontend/src/src_hrc/pages/Dashboard/Wallet/Wallet.js the field contractAddress<br />
 3. Start the UI interface 
     go to frontend folder
     install all dependencies
@@ -36,19 +36,19 @@
 
 
 ## Future development:
-v0.0.1 testnet Proof of feasible (works with an admin administrator/deployer/owner of contract)[Done]
-...
-...
-...
-v0.1.0 mainnet Proof of feasible (works with an admin administrator/deployer/owner of contract)[Work in Progress]
-...
-...
-...
-v1.0.0 Bridge using zk technology no admin needed (works with trustless technology)
-...
-...
-[TO BE PLAN]
-...
+v0.0.1 testnet Proof of feasible (works with an admin administrator/deployer/owner of contract)[Done]<br />
+...<br />
+...<br />
+...<br />
+v0.1.0 mainnet Proof of feasible (works with an admin administrator/deployer/owner of contract)[Work in Progress]<br />
+...<br />
+...<br />
+...<br />
+v1.0.0 Bridge using zk technology no admin needed (works with trustless technology)<br />
+...<br />
+...<br />
+[TO BE PLAN]<br />
+...<br />
 
 ## Thank you note
 This project was build with the help ok zku.one (zero knowledge university) and special thanks for the mentors helps.
