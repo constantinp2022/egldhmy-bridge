@@ -53,7 +53,8 @@ v1.0.0 Bridge using zk technology no admin needed (works with trustless technolo
 ## Thank you note
 This project was build with the help ok zku.one (zero knowledge university) and special thanks for the mentors helps.
 Open project that help for realizing this project were:
-    1. https://github.com/ElrondNetwork/dapp-template - for ui over elrond network
-    2. https://github.com/ElrondNetwork/ping-pong-smart-contract - for contract build  over elrond network
-    3. https://github.com/mikec3/my_tutorials/tree/master/simple_storage - for UI over Harmony network
-    4. vercel for UI deployment
+1. https://github.com/ElrondNetwork/dapp-template - for ui over elrond network
+2. https://github.com/ElrondNetwork/ping-pong-smart-contract - for contract build  over elrond network
+3. https://github.com/mikec3/my_tutorials/tree/master/simple_storage - for UI over Harmony network
+4. Vercel for UI deployment: https://testnet-admin-egldhmy-bridge.vercel.app/ 
+5. Production testnet github repo: https://github.com/constantinp2022/testnet-admin-egldhmy-bridge
