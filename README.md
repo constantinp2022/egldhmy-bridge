@@ -3,11 +3,13 @@
 
 ## Proof of concept 
 1. Develop a minimum viable product MVP so that a bridge between the two networks is feasible.
-2. Launch testnet details
-    2.1. ELROND testnet smartcontract: https://testnet-explorer.elrond.com/accounts/erd1qqqqqqqqqqqqqpgqsv7ggfdlcgyf8frmffxs5ptrdnsr3cppyfjshxxgrl
-    2.2. HARMONY testnet smart contract: https://explorer.testnet.harmony.one/address/0x25b06d69b9badbf99219b3fdf126a66dc40f835d?activeTab=3 
-3. Launch mainnet details
-
+2. Launch testnet details<br />
+    2.1. ELROND testnet smartcontract: https://testnet-explorer.elrond.com/accounts/erd1qqqqqqqqqqqqqpgqsv7ggfdlcgyf8frmffxs5ptrdnsr3cppyfjshxxgrl <br />
+    2.2. HARMONY testnet smart contract: https://explorer.testnet.harmony.one/address/0x25b06d69b9badbf99219b3fdf126a66dc40f835d?activeTab=3 <br />
+3. Launch mainnet details<br />
+    3.1. ELROND mainnet smartcontract: https://explorer.elrond.com/accounts/erd1qqqqqqqqqqqqqpgq03s6pnapp0sh86h6wfpau234zarz05093zms7pfxuj <br />
+    3.2. HARMONY mainnet smart contract: https://explorer.harmony.one/address/0xd3291787234fca22eaa90d496d3cb718e51656c5 <br />
+<br />
 ...
 
 ## For local deployment
@@ -58,3 +60,5 @@ Open project that help for realizing this project were:
 3. https://github.com/mikec3/my_tutorials/tree/master/simple_storage - for UI over Harmony network
 4. Vercel for UI deployment: https://testnet-admin-egldhmy-bridge.vercel.app/ 
 5. Production testnet github repo: https://github.com/constantinp2022/testnet-admin-egldhmy-bridge
+6. Vercel for UI deployment: https://egldhmy-bridge-v0-0-2.vercel.app/
+7. Mainnet github production: https://github.com/constantinp2022/egldhmy-bridge-v0.0.2
