@@ -1,8 +1,8 @@
 {
     "configurations": {
         "default": {
-            "proxy": "https://testnet-api.elrond.com",
-            "chainID": "T"
+            "proxy": "https://api.elrond.com",
+            "chainID": "1"
         }
     },
     "contract":{
@@ -11,8 +11,8 @@
             "bytecode": "output/lock-egld.wasm",
             "recall-nonce": true,
             "pem": "wallet/wallet-owner.pem",
-            "gas-limit": 59999999,
-            "arguments": [1000000000000000000],
+            "gas-limit": 39999999,
+            "arguments": [10000000000000000],
             "send": true,
             "outfile": "deploy-testnet.interaction.json"
         }

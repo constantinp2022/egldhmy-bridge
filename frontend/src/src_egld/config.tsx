@@ -1,4 +1,4 @@
 export const contractAddressEGLD =
-  'erd1qqqqqqqqqqqqqpgqsv7ggfdlcgyf8frmffxs5ptrdnsr3cppyfjshxxgrl';
+  'erd1qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq6gq4hu';
 
 export const dAppName = 'Bridge between Elrond and Harmony';

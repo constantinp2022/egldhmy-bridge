@@ -7,7 +7,7 @@ import UserInteraction from '../Interactions/UserInteraction';
 
 const Wallet = () => {
 
-	let contractAddress = '0x25b06D69B9BAdbf99219B3fDf126A66Dc40F835d';
+	let contractAddress = '0xD3291787234fcA22EaA90D496d3CB718E51656C5';
 
 	const [errorMessage, setErrorMessage] = useState(null);
 	const [defaultAccount, setDefaultAccount] = useState(null);
