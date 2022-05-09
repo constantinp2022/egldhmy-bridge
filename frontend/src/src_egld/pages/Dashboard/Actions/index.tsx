@@ -67,7 +67,7 @@ const Actions = () => {
 
   const sendDepositTransaction = async () => {
     const depositTransaction = {
-      value: '1000000000000000000',
+      value: '10000000000000000',
       data: 'deposit',
       receiver: contractAddressEGLD
     };
