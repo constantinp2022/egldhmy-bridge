@@ -7,8 +7,8 @@
     2.1. ELROND testnet smartcontract: https://testnet-explorer.elrond.com/accounts/erd1qqqqqqqqqqqqqpgqsv7ggfdlcgyf8frmffxs5ptrdnsr3cppyfjshxxgrl <br />
     2.2. HARMONY testnet smart contract: https://explorer.testnet.harmony.one/address/0x25b06d69b9badbf99219b3fdf126a66dc40f835d?activeTab=3 <br />
 3. Launch mainnet details<br />
-    3.1. ELROND mainnet smartcontract: https://testnet-explorer.elrond.com/accounts/erd1qqqqqqqqqqqqqpgqsv7ggfdlcgyf8frmffxs5ptrdnsr3cppyfjshxxgrl <br />
-    3.2. HARMONY mainnet smart contract: https://explorer.testnet.harmony.one/address/0x25b06d69b9badbf99219b3fdf126a66dc40f835d?activeTab=3 <br />
+    3.1. ELROND mainnet smartcontract: https://explorer.elrond.com/accounts/erd1qqqqqqqqqqqqqpgq03s6pnapp0sh86h6wfpau234zarz05093zms7pfxuj <br />
+    3.2. HARMONY mainnet smart contract: https://explorer.harmony.one/address/0xd3291787234fca22eaa90d496d3cb718e51656c5 <br />
 <br />
 ...
 
